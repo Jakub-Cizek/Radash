@@ -10,7 +10,7 @@ class Material:
         self.composition_Z=np.zeros(self.number_composition_element,dtype=int)
         self.composition_units='a'
         
-        #concentration renormalization
+        #renormalization of concentrations
         sum=0
         for i in range(self.number_composition_element):
           sum=sum+self.composition_concentration[i]
