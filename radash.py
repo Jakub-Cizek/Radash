@@ -331,7 +331,7 @@ class Material:
           self.VEC=self.VEC+self.composition_VEC[i]*self.composition_concentration[i]
          print(f"composition weighted VEC: {self.VEC:5.3f} g/cm3")
          
-    #thermal neutron cross sections
+    #thermal neutron cross section
     def get_neutron_cross_section(self):
          data_neutron_cross_section=np.loadtxt("neutron_cross_section.txt")
          number_data_neutron_cross_section=np.size(data_neutron_cross_section[:,0])
