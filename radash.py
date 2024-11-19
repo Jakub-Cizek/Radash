@@ -248,7 +248,7 @@ class Material:
         print(f"material: {self.name}")
         print(f"number of constituents: {self.number_composition_element}")
         for i in range(self.number_composition_element):
-          print(f"{self.composition_element[i]} {self.composition_Z[i]} {self.composition_concentration[i]}")
+          print(f"{self.composition_element[i]:2s} {self.composition_Z[i]:2d} {self.composition_concentration[i]:5.3f}")
         if self.composition_units=='a':
           print(f"units: atomic")
         
@@ -276,7 +276,7 @@ class Material:
             print(f"error: no data for density of element {self.composition_element[i]}")     
          self.density=0     
          for i in range(self.number_composition_element):
-          print(f"{self.composition_element[i]} {self.composition_density[i]:5.3f} g/cm3")
+          print(f"{self.composition_element[i]:2s} {self.composition_density[i]:5.3f} g/cm3")
           self.density=self.density+data_density[i,1]*self.composition_concentration[i]
          print(f"composition weighted mean density: {self.density:5.3f} g/cm3")
          
@@ -296,7 +296,7 @@ class Material:
             print(f"error: no data for atomic radius of element {self.composition_element[i]}")     
          self.mean_radius=0     
          for i in range(self.number_composition_element):
-          print(f"{self.composition_element[i]} {self.composition_radius[i]:5.3f} A")
+          print(f"{self.composition_element[i]:2s} {self.composition_radius[i]:5.3f} A")
           self.mean_radius=self.mean_radius+data_radius[i,1]*self.composition_concentration[i]
          print(f"composition weighted mean atomic radius: {self.mean_radius:5.3f} A")
          
@@ -327,7 +327,7 @@ class Material:
             print(f"error: no data for VEC of element {self.composition_element[i]}")     
          self.VEC=0     
          for i in range(self.number_composition_element):
-          print(f"{self.composition_element[i]} {self.composition_VEC[i]:5.3f} g/cm3")
+          print(f"{self.composition_element[i]:2s} {self.composition_VEC[i]:5.3f} g/cm3")
           self.VEC=self.VEC+self.composition_VEC[i]*self.composition_concentration[i]
          print(f"composition weighted VEC: {self.VEC:5.3f} g/cm3")
          
@@ -345,6 +345,6 @@ class Material:
             print(f"error: no data for neutron cross-section of element {self.composition_element[i]}")     
          self.neutron_cross_section=0     
          for i in range(self.number_composition_element):
-          print(f"{self.composition_element[i]} {self.composition_neutron_cross_section[i]:5.3f} barn")
+          print(f"{self.composition_element[i]:2s} {self.composition_neutron_cross_section[i]:5.3f} barn")
           self.neutron_cross_section=self.neutron_cross_section+self.composition_neutron_cross_section[i]*self.composition_concentration[i]
          print(f"composition weighted neutron cross-section: {self.neutron_cross_section:5.3f} barn")     
