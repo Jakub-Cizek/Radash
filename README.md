@@ -21,6 +21,6 @@ The Radash directory  contains the following files:
 <li><b>radash.py</b> - radash code in Python. A new class of objects called <i> Material </i> is created in this library. 
 Furthermore, methods for working with objects of the Material class are created in the radash library, which enable the calculation of radiation damage. In particular calculation of NRT dpa and arc dpa damage. 
 </li>
-<li><a href="tutorial.ipyn" target="_blan"><b>tutorial.ipyn</b></a> – Jupiter Notebook containing annotated calculation of radiation damage of Nb<sub>2</sub>TaTi<sub>3</sub>VZr<sub>2</sub> alloy when irradiated with neutrons. The purpose of this file is to explain to the user how to use the RADASH software.</li>
+<li><a href="tutorial.ipynb" target="_blan"><b>tutorial.ipynb</b></a> – Jupiter Notebook containing annotated calculation of radiation damage of Nb<sub>2</sub>TaTi<sub>3</sub>VZr<sub>2</sub> alloy when irradiated with neutrons. The purpose of this file is to explain to the user how to use the RADASH software.</li>
 <li>Other files with the txt extension are files containing data that RADASH uses for calculations. E.g. the file arc_dpa_constants.txt contains constants b, c for the survival function of Frenkel pairs. These files are required for RADASH to function properly.</li>
 </p>
