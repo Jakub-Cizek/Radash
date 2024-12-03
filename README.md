@@ -13,7 +13,9 @@ RADASH is a Python library for evaluation of radiation damage in high entropy an
 This makes RADASH independent of the specific platform on which it will be run and only needs a Python interpreter to function.
 It is recommended to run RADASH using <a href="https://anaconda.org/" target="_blank">Anaconda</a> Python distribution.
 </p>
-
+<p>
+Dependencies: RADASH uses Pyhon libraries <a href="https://numpy.org/" target="_blank">Numpy</a> and <a href="https://matplotlib.org/" target="_blank">Matplotlib</a>. These libraries are standard part of the <a href="https://anaconda.org/" target="_blank">Anaconda</a> distribution.
+</p>  
 <p>
 The Radash directory  contains the following files:
 <li><b>radash.py</b> - radash code in Python. A new class of objects called <i> Material </i> is created in this library. 
